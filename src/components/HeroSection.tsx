@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ArrowRight, Download, ShieldCheck, MapPin, Building2, Home, Send } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import brochure from "@/assets/Dishapuram Brochure.pdf";
 
 const highlights = [
   { icon: ShieldCheck, text: "Government Approved Project" },
@@ -73,7 +74,8 @@ const HeroSection = () => {
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
-                href="#contact"
+                href={brochure}
+                target="_blank"
                 className="inline-flex items-center justify-center gap-2 border-2 border-primary-foreground/40 text-primary-foreground px-8 py-4 rounded-sm font-body text-sm font-semibold uppercase tracking-wider hover:bg-primary-foreground/10 transition-all duration-300"
               >
                 <Download className="w-4 h-4" />

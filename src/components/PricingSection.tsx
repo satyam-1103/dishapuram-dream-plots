@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-
+import priceList from "@/assets/Dishpuram Pricelist.pdf";
 const PricingSection = () => (
   <section id="pricing" className="section-padding bg-card">
     <div className="container mx-auto">
@@ -60,12 +60,21 @@ const PricingSection = () => (
           ))}
         </div>
 
-        <div className="text-center mt-10">
+        <div className="text-center mt-10 flex items-center justify-center gap-4">
           <a
             href="#contact"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-sm font-body text-sm font-semibold uppercase tracking-wider hover:bg-gold-dark transition-colors"
           >
             Reserve Your Plot
+            <ArrowRight className="w-4 h-4" />
+          </a>
+
+          <a
+            href={priceList}
+            target="_blank"
+            className="inline-flex items-center gap-2  text-foreground px-8 py-4 rounded-sm font-body text-sm font-semibold uppercase tracking-wider hover:bg-gold-dark transition-colors"
+          >
+            Download Price List
             <ArrowRight className="w-4 h-4" />
           </a>
         </div>
